@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderlust Diaries — Travel Stories That Inspire</title>
+<meta name="description" content="Explore breathtaking destinations, travel tips, and adventure stories from around the world. Your ultimate travel inspiration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Wanderlust<span>Diaries</span></a>
+    <div class="nav-links">
+      <a href="#destinations">Destinations</a>
+      <a href="#stories">Stories</a>
+      <a href="#tips">Travel Tips</a>
+      <a href="#about-section">About</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-tag">✈️ Travel Stories That Inspire</p>
+    <h1 class="hero-title">The World Is a Book,<br>And Those Who Do Not<br>Travel Read Only a Page</h1>
+    <p class="hero-sub">Breathtaking destinations, hidden gems, and stories that will make you pack your bags</p>
+    <a href="#stories" class="btn-hero">Explore Stories</a>
+  </div>
+</header>
+
+<!-- Featured Destinations -->
+<section id="destinations" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Featured</span>
+      <h2 class="section-title">Destinations That Will Take Your Breath Away</h2>
+    </div>
+    <div class="dest-grid">
+      <a href="#story-1" class="dest-card dest-large">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Swiss Alps" loading="lazy">
+        <div class="dest-info"><span class="dest-loc">🇨🇭 Switzerland</span><h3>The Magic of the Swiss Alps</h3></div>
+      </a>
+      <a href="#story-3" class="dest-card">
+        <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=600" alt="Bali" loading="lazy">
+        <div class="dest-info"><span class="dest-loc">🇮🇩 Bali</span><h3>Bali Beyond the Resorts</h3></div>
+      </a>
+      <a href="#story-5" class="dest-card">
+        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600" alt="Patagonia" loading="lazy">
+        <div class="dest-info"><span class="dest-loc">🇦🇷 Patagonia</span><h3>Patagonia: Edge of the World</h3></div>
+      </a>
+      <a href="#story-2" class="dest-card">
+        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600" alt="Japan" loading="lazy">
+        <div class="dest-info"><span class="dest-loc">🇯🇵 Japan</span><h3>Cherry Blossoms & Ancient Temples</h3></div>
+      </a>
+      <a href="#story-7" class="dest-card dest-wide">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=900" alt="Italy" loading="lazy">
+        <div class="dest-info"><span class="dest-loc">🇮🇹 Italy</span><h3>Amalfi Coast: Where Heaven Meets the Sea</h3></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Stories -->
+<section id="stories" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Latest</span>
+      <h2 class="section-title">Travel Stories</h2>
+    </div>
+    <div id="blog-grid" class="blog-grid"></div>
+  </div>
+</section>
+
+<!-- Travel Tips -->
+<section id="tips" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Essential</span>
+      <h2 class="section-title">Travel Tips & Guides</h2>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon">🎒</div>
+        <h3>Packing Like a Pro</h3>
+        <p>The minimalist packing guide that changed how I travel forever. Fit everything in a carry-on — even for 2-week trips.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">💰</div>
+        <h3>Budget Travel Hacks</h3>
+        <p>How I visited 30 countries on a teacher's salary. Flight hacks, accommodation tricks, and money-saving secrets.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">📱</div>
+        <h3>Must-Have Travel Apps</h3>
+        <p>15 apps that save me time, money, and stress on every trip. From offline maps to real-time translation.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🛂</div>
+        <h3>Visa-Free Destinations</h3>
+        <p>50 incredible countries you can visit without a visa. Your passport is more powerful than you think.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section section-newsletter">
+  <div class="container newsletter-inner">
+    <h2>Get Travel Inspiration Delivered</h2>
+    <p>Join 50,000+ travelers. Weekly stories, tips, and deals — no spam, ever.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault();this.innerHTML='<p class=success>✅ You\'re in! Check your inbox for a welcome surprise.</p>'">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about-section" class="section section-alt">
+  <div class="container about-inner">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600" alt="Travel landscape" class="about-img" loading="lazy">
+    <div class="about-text">
+      <span class="section-tag">About</span>
+      <h2>Hi, I'm Alex — Traveler, Writer, Dreamer</h2>
+      <p>I quit my corporate job in 2019 to explore the world full-time. What started as a personal journal became Wanderlust Diaries — a place where travel stories come alive. I believe that the best adventures happen when you step outside your comfort zone and embrace the unknown.</p>
+      <p>Over 5 years, I've visited 47 countries across 6 continents. Every destination taught me something new about the world and myself. This blog is my way of sharing those lessons — and inspiring you to take that trip you've been dreaming about.</p>
+      <div class="about-stats">
+        <div><strong>47</strong><span>Countries</span></div>
+        <div><strong>6</strong><span>Continents</span></div>
+        <div><strong>500+</strong><span>Stories</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ad section -->
+<div class="container">
+  <div class="ad-container">
+    <div class="ad-label">Advertisement</div>
+    <div id="ad-bottom" style="min-height:90px;max-width:728px;margin:0 auto"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h4>Wanderlust<span>Diaries</span></h4>
+      <p>Travel stories that inspire your next adventure. Explore the world through the eyes of passionate travelers.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <a href="#destinations">Destinations</a>
+      <a href="#stories">Stories</a>
+      <a href="#tips">Travel Tips</a>
+    </div>
+    <div class="footer-col">
+      <h5>Legal</h5>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="footer-col">
+      <h5>Follow</h5>
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="#">YouTube</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wanderlust Diaries. All rights reserved. Travel responsibly. 🌍</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Blog Post Modal -->
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="blog-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
